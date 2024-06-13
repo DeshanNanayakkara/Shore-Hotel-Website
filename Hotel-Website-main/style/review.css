@@ -1,0 +1,84 @@
+#review{
+  display: grid;
+  grid-template-rows: auto;
+  text-align: center;
+  place-content: center;
+  justify-content: center;
+
+
+}
+
+.card {
+  display: inline-block;
+  margin: 1em;
+  background: linear-gradient(135deg, #012e45 60%, black);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  color: rgb(255, 255, 255);
+  width: 20vw;
+  height: auto;
+  padding: auto;
+  
+}
+
+.card img {
+  width: 100%;
+  height: 10vw;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 1em;
+}
+
+.card-content h4 {
+  margin: 0.5em 0;
+}
+
+
+
+
+/*  */
+
+.rate {
+  
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:4vw;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */

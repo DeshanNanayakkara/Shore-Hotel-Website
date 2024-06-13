@@ -1,0 +1,51 @@
+.about-container{
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  
+}
+
+
+.about-img img{
+
+  height: 400px;
+  width: 80%;
+  border-radius: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
+
+  box-shadow:  20px 10px 20px lightblue;
+  
+}
+
+.welcome-heading{
+  font-family: Playfair Display;
+  width: 70%;
+  font-size: 30px;
+  color: #2f1d6a;
+  margin-left: 20%;
+  margin-bottom: 40px;
+}
+
+.welcome-paragraph{
+  width: 65%;
+  font-size: 16px;
+  line-height: 25px;
+  margin-left: 20%;
+}
+
+@media(max-width:1000px){
+  .about-container{
+    grid-template-columns: 1fr;
+  }
+  .welcome-paragraph{
+    margin-bottom: 20px;
+  }
+  .about-img img{
+    height: 300px;
+    width: 80%;
+    margin-left: 10%;
+    box-shadow:  10px 20px 20px lightblue;
+  
+  }
+}

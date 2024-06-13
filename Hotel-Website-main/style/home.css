@@ -1,0 +1,89 @@
+
+  /* shortcut grid styles */
+
+.shortcut-grid{
+  height: 118px;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* margin-left: 150px;
+  margin-right: 150px; */
+  margin-left: 15%;
+  margin-right: 20%;
+  /* background-color: lightblue; */
+}
+
+.shortcut-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+ 
+}
+
+.shortcut-icon{
+  height: 34px;
+  margin-bottom: 5px;
+}
+
+.shortcut-container p{
+  text-align: center;
+  font-size: 12px;
+}
+
+@media(max-width: 768px){
+
+  .space{
+    margin: 150px;
+  }
+
+  .shortcut-grid{
+    /* grid-template-columns: 1fr;
+    row-gap: 50px; */
+    column-gap: 12px;
+    
+  }
+
+  .shortcut-container p{
+    text-align: center;
+    font-size: 8px;
+  }
+
+}
+
+
+/* home page img  */
+
+.home-pic{
+  object-fit: cover;
+  /* height: 540px; */
+  height: 64vh;
+  width: 100%;
+  /* height: auto; */
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* booking-bar style  */
+
+
+
+
+.home-container{
+  
+  position: relative;
+}
+
+@media(max-width:768px){
+  .booking-bar{
+   visibility: hidden;
+  }
+ .booking-bar img{
+  height: 0px;
+ }
+ .booking-bar p{
+  font-size: 1px;
+ }
+}

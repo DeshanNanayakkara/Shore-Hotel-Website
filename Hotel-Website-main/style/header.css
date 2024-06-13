@@ -1,0 +1,21 @@
+
+.hotel-logo{
+  height: 40px;
+}
+
+.navbar{
+  /* padding: 20px;
+  margin-bottom: 20px; */
+  font-family: Poppins,Arial;
+  background-color: rgb(190, 237, 209);
+}
+.nav-link{
+  transition: color 0.15s , text-decoration 0.15s ;
+}
+.nav-link:hover{
+  
+  color: #2f1d6a;
+  text-decoration: underline 2px;
+  text-underline-offset: 5px;
+  text-decoration-skip: none;
+}
